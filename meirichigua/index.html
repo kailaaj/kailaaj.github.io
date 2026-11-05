@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>每日吃瓜大赛-吃瓜大赛_娱乐吃瓜_热门爆料_吃瓜日常</title>
+<meta name="description" content="每日吃瓜大赛聚焦网络娱乐吃瓜与热门爆料话题，整理吃瓜大赛常见的讨论类型、参与方式、信息辨别思路与围观礼仪，帮助你在每日吃瓜大赛的讨论中看清话题来龙去脉，理性围观、安全发言、避免被不实爆料带节奏。">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23f5b32b'/%3E%3Cpath d='M14 40c8-18 28-18 36 0' fill='none' stroke='%232b1a0e' stroke-width='5' stroke-linecap='round'/%3E%3Ccircle cx='24' cy='26' r='3.4' fill='%232b1a0e'/%3E%3Ccircle cx='40' cy='26' r='3.4' fill='%232b1a0e'/%3E%3C/svg%3E">
+<style>
+:root{
+  --melon:#f5b32b;
+  --melon-deep:#d98f12;
+  --ink:#2b1a0e;
+  --ink-soft:#5c4632;
+  --paper:#fff8ec;
+  --paper-2:#fdf0d8;
+  --line:#e7d3b0;
+  --leaf:#3f7a4a;
+  --alert:#b8452f;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  font-family:"PingFang SC","Microsoft YaHei","Hiragino Sans GB",system-ui,sans-serif;
+  background:var(--paper);
+  color:var(--ink);
+  line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:inherit;text-decoration:none;}
+img,svg{max-width:100%;display:block;}
+
+/* 顶部 */
+.topbar{
+  background:var(--ink);
+  color:#ffe9bd;
+  font-size:13px;
+  letter-spacing:.04em;
+}
+.topbar-in{
+  max-width:1120px;margin:0 auto;padding:9px 20px;
+  display:flex;flex-wrap:wrap;gap:6px 18px;justify-content:space-between;align-items:center;
+}
+.topbar-in span{opacity:.85;}
+
+.sitehead{
+  background:linear-gradient(180deg,var(--paper-2),var(--paper));
+  border-bottom:3px solid var(--melon);
+}
+.sitehead-in{
+  max-width:1120px;margin:0 auto;padding:26px 20px 22px;
+  display:flex;flex-wrap:wrap;gap:18px;align-items:flex-end;justify-content:space-between;
+}
+.brandline{display:flex;align-items:center;gap:14px;}
+.melonmark{
+  width:52px;height:52px;flex:0 0 auto;border-radius:50% 50% 46% 46%/58% 58% 42% 42%;
+  background:radial-gradient(circle at 34% 30%,#ffd268,#e59c14 70%);
+  display:grid;place-items:center;font-weight:800;color:var(--ink);font-size:20px;
+  box-shadow:inset 0 -4px 0 rgba(0,0,0,.08);
+}
+.brandtxt b{display:block;font-size:23px;letter-spacing:.02em;}
+.brandtxt em{font-style:normal;font-size:13px;color:var(--ink-soft);}
+.headnote{
+  font-size:13.5px;color:var(--ink-soft);max-width:420px;border-left:3px dashed var(--line);
+  padding-left:14px;
+}
+
+/* 导航 */
+.navrail{
+  background:var(--ink);color:#fbe6bd;position:sticky;top:0;z-index:20;
+  box-shadow:0 2px 0 var(--melon-deep);
+}
+.navrail ul{
+  max-width:1120px;margin:0 auto;padding:0 20px;list-style:none;
+  display:flex;gap:4px;overflow-x:auto;scrollbar-width:none;
+}
+.navrail ul::-webkit-scrollbar{display:none;}
+.navrail a{
+  display:block;padding:13px 15px;font-size:14.5px;white-space:nowrap;
+  border-bottom:3px solid transparent;transition:.18s;
+}
+.navrail a:hover{background:#3d2a1a;border-bottom-color:var(--melon);color:#fff;}
+
+main{max-width:1120px;margin:0 auto;padding:0 20px 60px;}
+
+/* 首屏 */
+.hero{
+  margin-top:26px;
+  background:var(--paper-2);
+  border:2px solid var(--line);
+  border-radius:18px;
+  padding:34px 32px 30px;
+  position:relative;
+  overflow:hidden;
+}
+.hero::after{
+  content:"";position:absolute;right:-70px;top:-70px;width:230px;height:230px;
+  border-radius:50%;background:radial-gradient(circle,#ffe0a1,transparent 68%);
+}
+.hero h1{
+  font-size:clamp(24px,4vw,36px);line-height:1.3;letter-spacing:.01em;
+  position:relative;z-index:1;
+}
+.hero h1 span{color:var(--melon-deep);}
+.hero .tagline{
+  margin-top:14px;font-size:16px;color:var(--ink-soft);max-width:720px;position:relative;z-index:1;
+}
+.herotags{
+  display:flex;flex-wrap:wrap;gap:9px;margin-top:20px;position:relative;z-index:1;
+}
+.herotags span{
+  background:#fff;border:1px solid var(--line);border-radius:999px;
+  padding:6px 14px;font-size:13px;color:var(--ink-soft);
+}
+.heroflow{
+  margin-top:24px;display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;
+  position:relative;z-index:1;
+}
+.heroflow div{
+  background:#fff;border-left:4px solid var(--melon);border-radius:8px;padding:12px 14px;font-size:13.5px;
+}
+.heroflow b{display:block;font-size:14.5px;margin-bottom:2px;}
+
+/* 通用板块 */
+.panel{margin-top:44px;}
+.panel-head{
+  display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;
+  border-bottom:2px solid var(--ink);padding-bottom:10px;margin-bottom:22px;
+}
+.panel-head h2{
+  font-size:21px;letter-spacing:.02em;
+}
+.panel-head p{font-size:13.5px;color:var(--ink-soft);}
+.prose p{margin-bottom:14px;font-size:15.5px;color:#3d2c1c;}
+.prose p strong{color:var(--ink);background:linear-gradient(transparent 62%,#ffe0a1 62%);}
+
+/* 吃瓜类型 */
+.kindlist{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px;}
+.kind{
+  background:#fff;border:1px solid var(--line);border-radius:12px;padding:18px 18px 16px;
+  display:flex;flex-direction:column;gap:8px;
+}
+.kind h3{font-size:16.5px;}
+.kind .tag{
+  align-self:flex-start;font-size:12px;padding:2px 10px;border-radius:6px;
+  background:#fff3d6;color:var(--melon-deep);border:1px solid #f3dfb2;
+}
+.kind p{font-size:14px;color:var(--ink-soft);}
+
+/* 围观流程 */
+.steps{display:flex;flex-direction:column;gap:0;counter-reset:step;}
+.step{
+  display:flex;gap:18px;padding:16px 0;border-bottom:1px dashed var(--line);
+}
+.step:last-child{border-bottom:none;}
+.stepno{
+  flex:0 0 40px;height:40px;border-radius:10px;background:var(--melon);color:var(--ink);
+  font-weight:800;display:grid;place-items:center;font-size:16px;
+}
+.stepbody h3{font-size:16px;margin-bottom:4px;}
+.stepbody p{font-size:14.5px;color:var(--ink-soft);}
+
+/* 辨别清单 */
+.checkwrap{
+  display:grid;grid-template-columns:1.15fr .85fr;gap:20px;align-items:start;
+}
+.checkbox{
+  background:#fff;border:1px solid var(--line);border-radius:12px;padding:20px 22px;
+}
+.checkbox ul{list-style:none;display:flex;flex-direction:column;gap:11px;}
+.checkbox li{
+  font-size:14.5px;color:#3d2c1c;padding-left:26px;position:relative;
+}
+.checkbox li::before{
+  content:"✓";position:absolute;left:0;top:0;width:19px;height:19px;border-radius:5px;
+  background:#e7f2e3;color:var(--leaf);font-size:12px;display:grid;place-items:center;
+  margin-top:4px;font-weight:700;
+}
+.warnbox{
+  background:#fdf1ec;border:1px solid #f0cbbf;border-radius:12px;padding:20px 22px;
+}
+.warnbox h3{font-size:16px;color:var(--alert);margin-bottom:8px;}
+.warnbox p{font-size:14.5px;color:#6b4136;margin-bottom:10px;}
+.warnbox p:last-child{margin-bottom:0;}
+
+/* 话题表 */
+.topicgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;}
+.topic{
+  border:1px solid var(--line);border-radius:10px;background:var(--paper-2);
+  padding:16px 16px 14px;
+}
+.topic h3{font-size:15.5px;margin-bottom:6px;}
+.topic .meta{font-size:12.5px;color:var(--melon-deep);margin-bottom:6px;}
+.topic p{font-size:14px;color:var(--ink-soft);}
+
+/* 礼仪 */
+.manners{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px;}
+.manner{
+  background:#fff;border-top:4px solid var(--leaf);border-radius:0 0 10px 10px;
+  padding:16px 18px;border-left:1px solid var(--line);border-right:1px solid var(--line);border-bottom:1px solid var(--line);
+}
+.manner h3{font-size:15.5px;margin-bottom:6px;}
+.manner p{font-size:14px;color:var(--ink-soft);}
+
+/* FAQ */
+.faqlist{display:flex;flex-direction:column;gap:10px;}
+details{
+  background:#fff;border:1px solid var(--line);border-radius:10px;padding:0 18px;
+}
+details[open]{border-color:var(--melon);}
+summary{
+  cursor:pointer;padding:15px 0;font-size:15.5px;font-weight:600;list-style:none;
+  display:flex;justify-content:space-between;gap:12px;align-items:center;
+}
+summary::-webkit-details-marker{display:none;}
+summary::after{
+  content:"+";font-size:19px;color:var(--melon-deep);font-weight:700;flex:0 0 auto;
+}
+details[open] summary::after{content:"－";}
+details .ans{
+  padding:0 0 16px;font-size:14.5px;color:var(--ink-soft);border-top:1px dashed var(--line);
+  padding-top:12px;
+}
+
+/* CTA */
+.ctablock{
+  margin-top:46px;background:var(--ink);color:#ffe9bd;border-radius:16px;padding:32px 30px;
+  display:flex;flex-wrap:wrap;gap:18px;justify-content:space-between;align-items:center;
+}
+.ctablock h2{font-size:21px;color:#fff;}
+.ctablock p{font-size:14.5px;max-width:620px;margin-top:6px;}
+.ctablock .pill{
+  background:var(--melon);color:var(--ink);font-weight:700;font-size:14.5px;
+  padding:11px 22px;border-radius:999px;white-space:nowrap;
+}
+
+/* 页脚 */
+.sitefoot{
+  background:#241708;color:#d8c19a;margin-top:0;padding:34px 20px 40px;font-size:13.5px;
+}
+.sitefoot-in{max-width:1120px;margin:0 auto;display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:26px;}
+.sitefoot h3{color:#ffe9bd;font-size:15px;margin-bottom:9px;}
+.sitefoot p{margin-bottom:8px;line-height:1.7;}
+.sitefoot ul{list-style:none;}
+.sitefoot li{margin-bottom:7px;}
+.sitefoot a:hover{color:var(--melon);}
+.copyline{
+  max-width:1120px;margin:24px auto 0;padding-top:16px;border-top:1px solid #43301b;
+  font-size:12.5px;color:#9c8767;
+}
+
+@media(max-width:820px){
+  .checkwrap{grid-template-columns:1fr;}
+  .sitefoot-in{grid-template-columns:1fr 1fr;}
+  .hero{padding:26px 20px;}
+  .ctablock{padding:26px 20px;}
+}
+@media(max-width:560px){
+  .sitehead-in{padding:20px 16px;}
+  .brandtxt b{font-size:19px;}
+  .headnote{max-width:none;}
+  .sitefoot-in{grid-template-columns:1fr;}
+  .heroflow{grid-template-columns:1fr;}
+  .panel-head h2{font-size:19px;}
+  .step{gap:12px;}
+  .stepno{flex-basis:34px;height:34px;font-size:14px;}
+}
+</style>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="topbar-in">
+    <span>每日吃瓜大赛 · 娱乐话题围观参考</span>
+    <span>理性吃瓜 · 信息先辨真假</span>
+  </div>
+</div>
+
+<header class="sitehead">
+  <div class="sitehead-in">
+    <div class="brandline">
+      <div class="melonmark">瓜</div>
+      <div class="brandtxt">
+        <b>每日吃瓜大赛</b>
+        <em>吃瓜话题整理与围观思路参考站</em>
+      </div>
+    </div>
+    <p class="headnote">这里不排队抢头条，而是把每天流传的吃瓜话题拆开看：它从哪来、缺什么证据、该怎么围观。</p>
+  </div>
+</header>
+
+<nav class="navrail" aria-label="页面导航">
+  <ul>
+    <li><a href="#what">吃瓜大赛是什么</a></li>
+    <li><a href="#kinds">常见话题类型</a></li>
+    <li><a href="#flow">围观流程</a></li>
+    <li><a href="#check">真假辨别</a></li>
+    <li><a href="#topics">今日话题区</a></li>
+    <li><a href="#manners">围观礼仪</a></li>
+    <li><a href="#faq">常见问题</a></li>
+  </ul>
+</nav>
+
+<main>
+
+  <section class="hero" id="what">
+    <h1>每日吃瓜大赛：把<span>吃瓜大赛</span>当作一场信息辨别练习</h1>
+    <p class="tagline">每天都有新话题冒出来，但真正值得看的是事实、证据和上下文，而不是谁说得更热闹。</p>
+    <div class="herotags">
+      <span>娱乐吃瓜</span>
+      <span>热门爆料</span>
+      <span>话题梳理</span>
+      <span>围观礼仪</span>
+      <span>信息核实</span>
+    </div>
+    <div class="heroflow">
+      <div><b>先看来源</b>截图、聊天记录、匿名帖，可信度差别很大。</div>
+      <div><b>再看上下文</b>截断的对话最容易制造误会。</div>
+      <div><b>最后看回应</b>当事人或相关方是否澄清。</div>
+    </div>
+  </section>
+
+  <section class="panel" aria-labelledby="what-h">
+    <div class="panel-head">
+      <h2 id="what-h">每日吃瓜大赛到底在讨论什么</h2>
+      <p>先理解词义，再决定要不要参与</p>
+    </div>
+    <div class="prose">
+      <p><strong>每日吃瓜大赛</strong>并不是一项真实的比赛，也不是有主办方、赛程和奖项的活动。它更像网络上的一个口语说法：每天都有新的娱乐话题、爆料帖、争议事件轮番出现，围观的人多、讨论的声音杂，于是大家戏称这是一场“吃瓜大赛”。理解这一点很重要，因为一旦把它当成某种权威榜单或官方评选，就容易对信息产生错误的信任。</p>
+      <p>在这个语境里，“吃瓜”指的是围观热门事件、看别人讨论、了解事情经过；“大赛”只是形容话题密集、更新快的调侃。所以访问一个以每日吃瓜大赛为主题的页面，真正要找的通常不是赛制，而是：今天有哪些话题值得关注、这些话题的可信度如何、围观时应该注意什么、怎样不被带节奏。</p>
+      <p>这也是本页面组织内容的方式。我们不提供所谓的排名或爆料原文，而是把吃瓜话题拆成类型、来源、核实步骤和讨论礼仪几个部分。对刚开始接触这类话题的读者来说，先建立一套判断框架，比记住某一条具体爆料更有用，因为话题每天都在变，判断方法却能一直用。</p>
+      <p>需要提醒的是，吃瓜本身没有错，围观公共讨论也是正常的网络行为。问题出在把未经核实的说法当成结论，再转发出去。每日吃瓜大赛里最容易被忽略的一环，恰恰是“这条信息是谁说的、有没有证据、对方是否回应”。把这三件事想清楚，吃瓜就会从看热闹变成有质量的了解。</p>
+    </div>
+  </section>
+
+  <section class="panel" id="kinds" aria-labelledby="kinds-h">
+    <div class="panel-head">
+      <h2 id="kinds-h">吃瓜大赛里常见的话题类型</h2>
+      <p>不同类型的爆料，可信度和处理方式完全不同</p>
+    </div>
+    <div class="kindlist">
+      <article class="kind">
+        <span class="tag">作品与档期</span>
+        <h3>影视综艺话题</h3>
+        <p>围绕选角、播出、口碑、收视等展开。这类话题通常有公开物料可查，判断时优先看官方发布和节目本身的片段，而不是二手转述。</p>
+      </article>
+      <article class="kind">
+        <span class="tag">公开动态</span>
+        <h3>艺人日常与公开行程</h3>
+        <p>来自公开场合、公开账号或媒体报道的内容，争议往往在于解读方式。看原话、看完整视频，比看一句被截出来的标题更接近事实。</p>
+      </article>
+      <article class="kind">
+        <span class="tag">争议事件</span>
+        <h3>合作纠纷与言论争议</h3>
+        <p>这类话题涉及多方说法，容易一边倒。合理做法是并列呈现各方公开回应，避免只根据单方描述下判断。</p>
+      </article>
+      <article class="kind">
+        <span class="tag">需谨慎</span>
+        <h3>匿名爆料与聊天截图</h3>
+        <p>来源不明、无法核验，是最容易出错的一类。截图可以伪造，聊天记录可以截断，看到这类内容先保持怀疑，不要急着传播。</p>
+      </article>
+      <article class="kind">
+        <span class="tag">需谨慎</span>
+        <h3>私生活与未经证实传闻</h3>
+        <p>即便话题很热，也不代表它真实或适合讨论。涉及个人隐私的内容，围观价值低、风险高，建议直接略过。</p>
+      </article>
+      <article class="kind">
+        <span class="tag">延伸讨论</span>
+        <h3>行业现象与规则讨论</h3>
+        <p>由单个事件引出的行业话题，比如宣传方式、粉丝文化、平台规则。这类讨论更有公共价值，但也需要区分事实与观点。</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="panel" id="flow" aria-labelledby="flow-h">
+    <div class="panel-head">
+      <h2 id="flow-h">一次完整的吃瓜围观流程</h2>
+      <p>从看到话题到形成判断，按顺序走一遍</p>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div class="stepno">1</div>
+        <div class="stepbody">
+          <h3>先确认话题是什么</h3>
+          <p>很多误会来自标题和内容对不上。先找到原始发布位置，弄清事件涉及谁、发生在什么时候、核心争议点是什么，再决定要不要继续看。</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="stepno">2</div>
+        <div class="stepbody">
+          <h3>判断信息来源层级</h3>
+          <p>当事人公开发言、官方声明、正规媒体报道属于较高层级；搬运帖、匿名爆料、粉丝转述属于较低层级。每日吃瓜大赛里传播最广的内容，往往不是层级最高的那一个。</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="stepno">3</div>
+        <div class="stepbody">
+          <h3>补齐上下文与时间线</h3>
+          <p>把零散信息按时间排一排，看前后是否矛盾。旧闻被当成新料、片段被当成全貌，是吃瓜过程中最常见的两类误判。</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="stepno">4</div>
+        <div class="stepbody">
+          <h3>看各方是否回应</h3>
+          <p>有回应的争议和没有回应的传闻，处理方式不同。回应本身也需要核实，但至少说明话题进入了可以对话的阶段。</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="stepno">5</div>
+        <div class="stepbody">
+          <h3>形成保留余地的判断</h3>
+          <p>信息不完整时，允许自己“暂时不知道”。在每日吃瓜大赛的讨论里，能说出“目前证据不足”的人，往往比急着下结论的人更接近真相。</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="stepno">6</div>
+        <div class="stepbody">
+          <h3>决定是否参与讨论</h3>
+          <p>不参与也是一种选择。如果话题涉及隐私、未成年人或未经证实的指控，围观到为止，比留下评论更稳妥。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="panel" id="check" aria-labelledby="check-h">
+    <div class="panel-head">
+      <h2 id="check-h">吃瓜大赛里辨别真假爆料的清单</h2>
+      <p>动手转发前，先过一遍这几个问题</p>
+    </div>
+    <div class="checkwrap">
+      <div class="checkbox">
+        <ul>
+          <li>内容有没有明确的原始出处，而不是“朋友说”“网上看到的”？</li>
+          <li>截图是否完整，有没有被裁掉关键上下文？</li>
+          <li>时间是否对得上，会不会是把旧内容当成新进展？</li>
+          <li>是否只有一方说法，另一方完全没有回应？</li>
+          <li>有没有正规媒体跟进核实，还是只在匿名渠道流传？</li>
+          <li>信息里是否包含他人隐私，比如住址、联系方式、家人信息？</li>
+          <li>传播它能带来什么，是帮助理解事件，还是只是增加热度？</li>
+        </ul>
+      </div>
+      <aside class="warnbox">
+        <h3>遇到这些情况请慢一点</h3>
+        <p>带有强烈情绪引导、要求“赶紧转发”“别让它沉下去”的内容，往往是在利用围观情绪推动传播。</p>
+        <p>只有聊天记录、没有其他佐证的爆料，可信度有限，不要因为它在每日吃瓜大赛的讨论区被反复提及就默认成立。</p>
+        <p>涉及个人隐私、家庭信息、未成年人内容的话题，即使热度很高，也不建议继续扩散。</p>
+      </aside>
+    </div>
+  </section>
+
+  <section class="panel" id="topics" aria-labelledby="topics-h">
+    <div class="panel-head">
+      <h2 id="topics-h">今日话题区可以关注哪些方向</h2>
+      <p>不罗列未经核实的具体爆料，只给出可关注的话题方向</p>
+    </div>
+    <div class="topicgrid">
+      <article class="topic">
+        <div class="meta">方向一 · 公开物料</div>
+        <h3>新作品与公开活动</h3>
+        <p>关注官方发布的海报、预告、定档信息，这类内容有据可查，适合作为吃瓜的起点。</p>
+      </article>
+      <article class="topic">
+        <div class="meta">方向二 · 多方回应</div>
+        <h3>争议事件的各方说法</h3>
+        <p>把各方公开声明放在一起看，注意时间顺序和措辞差异，避免只看单方转述。</p>
+      </article>
+      <article class="topic">
+        <div class="meta">方向三 · 行业讨论</div>
+        <h3>由事件引出的规则话题</h3>
+        <p>比如宣传尺度、粉丝行为边界、平台内容规范，这类讨论比单纯的八卦更有持续价值。</p>
+      </article>
+      <article class="topic">
+        <div class="meta">方向四 · 需要冷静</div>
+        <h3>匿名爆料类话题</h3>
+        <p>可以了解讨论了什么，但不要把匿名内容当作事实。每日吃瓜大赛里传播最快的，常常也是最难核实的。</p>
+      </article>
+      <article class="topic">
+        <div class="meta">方向五 · 旧闻重提</div>
+        <h3>被重新翻出的往事</h3>
+        <p>先确认时间，再判断是否已有结论或澄清。旧闻新炒是吃瓜时常见的干扰项。</p>
+      </article>
+      <article class="topic">
+        <div class="meta">方向六 · 话题复盘</div>
+        <h3>事件后续与澄清</h3>
+        <p>热度过去后，回看是否有澄清、更正或结果。复盘往往比围观过程更能看清一件事。</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="panel" id="manners" aria-labelledby="manners-h">
+    <div class="panel-head">
+      <h2 id="manners-h">参与吃瓜大赛讨论的基本礼仪</h2>
+      <p>围观是自由，发言要负责</p>
+    </div>
+    <div class="manners">
+      <article class="manner">
+        <h3>就事论事，不攻击个人</h3>
+        <p>讨论事件本身，比给当事人贴标签更有意义。情绪化的辱骂既解决不了问题，也可能伤害无关的人。</p>
+      </article>
+      <article class="manner">
+        <h3>不传播隐私信息</h3>
+        <p>住址、电话、家人信息、工作单位都不应该成为吃瓜素材。转发这类内容，风险往往大于所谓的“知情权”。</p>
+      </article>
+      <article class="manner">
+        <h3>标注不确定的内容</h3>
+        <p>如果一定要讨论未经核实的说法，说明它是传闻而不是事实。这一句话能减少很多误传。</p>
+      </article>
+      <article class="manner">
+        <h3>允许别人改变看法</h3>
+        <p>新证据出现后调整判断是正常的。每日吃瓜大赛的讨论里，能承认“之前理解错了”的人值得尊重。</p>
+      </article>
+      <article class="manner">
+        <h3>注意发言场合</h3>
+        <p>公开评论区、私域群聊、话题超话的传播效果不同，发言前想清楚内容会被谁看到。</p>
+      </article>
+      <article class="manner">
+        <h3>适时退出</h3>
+        <p>吃瓜不是义务。话题让人不适或已经变味时，关掉页面去做别的事，是很合理的选择。</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="panel" id="faq" aria-labelledby="faq-h">
+    <div class="panel-head">
+      <h2 id="faq-h">关于每日吃瓜大赛的常见问题</h2>
+      <p>把常被问到的问题一次说清</p>
+    </div>
+    <div class="faqlist">
+      <details>
+        <summary>每日吃瓜大赛是真实存在的比赛吗？</summary>
+        <div class="ans">不是。它属于网络口语，用来形容每天都有大量娱乐话题和爆料讨论涌现的现象，没有主办方、赛程、报名通道或奖项。把它理解成一种围观氛围的描述更准确，所以也不存在官方排名或成绩。</div>
+      </details>
+      <details>
+        <summary>这个页面会提供具体爆料原文吗？</summary>
+        <div class="ans">不会。未经核实的具体爆料，本页面不作收录和转述。这里提供的是话题类型、信息来源判断方法、围观流程和讨论礼仪，目的是帮助读者在面对每日吃瓜大赛式的信息流时，有能力自己判断，而不是依赖二手转述。</div>
+      </details>
+      <details>
+        <summary>看到匿名爆料应该怎么处理？</summary>
+        <div class="ans">先停一下。匿名爆料缺少可追溯的来源，截图可以伪造，聊天记录可以截断。建议先看有没有正规媒体跟进、当事方是否回应；在没有其他佐证前，不要转发，也不要把内容当作事实去评价他人。</div>
+      </details>
+      <details>
+        <summary>吃瓜和传谣的界限在哪里？</summary>
+        <div class="ans">主要看两点：是否明知信息未经核实仍然扩散，以及是否涉及他人隐私。了解公开事件、讨论公开信息属于正常围观；把不确定的内容当成结论传播，或者扩散住址、联系方式等隐私，就越过了界限。</div>
+      </details>
+      <details>
+        <summary>为什么很多吃瓜话题很快就反转？</summary>
+        <div class="ans">因为早期传播的往往是片段、截图或单方说法，信息不完整。随着当事人回应、更多背景被补充，判断自然会变化。每日吃瓜大赛式的讨论节奏快，反转也多，所以保留余地、不急着站队更稳妥。</div>
+      </details>
+      <details>
+        <summary>怎样判断一条爆料的可信度高低？</summary>
+        <div class="ans">可以从来源层级、证据完整度、时间线一致性和多方回应四个角度判断。原始发布比搬运可信，完整内容比截图可信，时间对得上比含糊其辞可信，有回应比完全无回应可讨论。四项都弱的内容，基本只能当作传闻看待。</div>
+      </details>
+      <details>
+        <summary>围观吃瓜话题会影响心情吗？</summary>
+        <div class="ans">会有影响，尤其是争议性话题密集出现时。建议给自己设定时间边界，不要在深夜长时间刷讨论区。如果发现某个话题让自己情绪明显波动，暂时退出、等后续信息更完整时再看，是更健康的方式。</div>
+      </details>
+    </div>
+  </section>
+
+  <section class="ctablock">
+    <div>
+      <h2>把吃瓜当成一次判断力练习</h2>
+      <p>每天的话题都会变，但核实来源、补齐上下文、保留余地的习惯可以一直用。带着这套思路看每日吃瓜大赛，比追着热度跑更有收获。</p>
+    </div>
+    <span class="pill">先辨真假，再谈观点</span>
+  </section>
+
+</main>
+
+<footer class="sitefoot">
+  <div class="sitefoot-in">
+    <div>
+      <h3>每日吃瓜大赛</h3>
+      <p>一个围绕娱乐吃瓜话题整理围观思路的参考页面，关注信息辨别、讨论礼仪与理性围观，不收录未经核实的具体爆料。</p>
+    </div>
+    <div>
+      <h3>内容方向</h3>
+      <ul>
+        <li><a href="#kinds">常见话题类型</a></li>
+        <li><a href="#flow">围观流程</a></li>
+        <li><a href="#check">真假辨别清单</a></li>
+        <li><a href="#manners">讨论礼仪</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3>阅读提醒</h3>
+      <p>页面内容为围观方法与信息判断参考，不构成对任何具体事件、个人或机构的定论。遇到争议话题，请以多方公开信息为准。</p>
+    </div>
+  </div>
+  <div class="copyline">
+    每日吃瓜大赛 · 娱乐话题围观参考 · 理性吃瓜，从核实来源开始
+  </div>
+</footer>
+
+</body>
+</html>
